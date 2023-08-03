@@ -65,16 +65,13 @@ small{
   max-width: 1200px;
   min-height: 90vh;
   margin: 0 auto;
-  background-color: whitesmoke;
   display: flex;
 }
 .hero__inner-left{
   width: 50%;
-  background-color: aquamarine;
 
 }
 .hero__inner-img{
-  background-color: grey;
   height: 380px;
   width: 380px;
   border-radius: 20px;
@@ -167,7 +164,7 @@ small{
   padding: 10px 0;
   align-items: center;
   width: 120px;
-  background-color: white;
+  background-color: whitesmoke;
 }
 .hero__inner-rightCheckOut{
   background-color: hsl(26, 100%, 55%);
