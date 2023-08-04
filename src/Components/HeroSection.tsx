@@ -38,7 +38,7 @@ const HeroSection = () => {
                             </div>
                             <div className='hero__inner-rightCheckOut'>
                                 <img src={Cart} style={{cursor: 'pointer', color:'white'}}alt='cart'/>
-                                <span style={{marginLeft: '8px', color: 'white', fontWeight: '500', fontSize:'1em'}}>Add to Cart</span>
+                                <span style={{marginLeft: '8px', color: 'white', fontWeight: '600', fontSize:'1em'}}>Add to Cart</span>
                             </div>
                         </div>
                     </div>

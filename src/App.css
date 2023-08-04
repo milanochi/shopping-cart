@@ -203,6 +203,7 @@ small{
   border-radius: 10px;
   cursor: pointer;
   width: 50%;
+ 
 }
 .modal{
   background-color: white;
@@ -216,6 +217,9 @@ small{
   z-index: 100;
   scale: .8;
   animation: displayCart .3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+.modal__inner button{
+  font-weight: 600;
 }
 @keyframes displayCart {
   100%{
