@@ -5,7 +5,7 @@
   -webkit-font-smoothing: 'antialiased';
   -moz-osx-font-smoothing: 'grayscale';
   box-sizing: border-box;
-  font-family: Poppins;
+  font-family: 'Poppins';
 }
 small{
   letter-spacing: 1px;
@@ -14,6 +14,11 @@ small{
 }
 .navbar{
   width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  
 }
 .navbar__inner{
   margin: 0 auto;
@@ -47,6 +52,26 @@ small{
   width: 100px;
   justify-content: space-between;
   align-items: center;
+}
+.navbar__inner-cart{
+  position: relative;
+  cursor: pointer;
+}
+.navbar__inner-cartNumber{
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  background-color: hsl(26, 100%, 55%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(40%, -95%);
+  color: white;
+  font-size: .9em;
+  font-weight: 600;
 }
 .navbar__inner-right2{
   border-radius: 50%;
@@ -124,6 +149,7 @@ small{
 .hero__inner-rightBottom p{
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  color: hsl(219, 9%, 45%);
  
 }
 .hero__inner-rightBottom{
@@ -143,12 +169,13 @@ small{
 .hero__inner-rightCurrentPrice span{
   background-color: hsl(25, 100%, 94%);
   color: hsl(26, 100%, 55%);
-  padding: 2px 8px;
+  padding: 3px 8px;
   border-radius: 8px;
   font-weight: 600;
+  font-size: 1em;
 }
 .hero__inner-rightSlashedPrice{
-  color: rgba(128, 128, 128, 0.589);
+  color: hsl(220, 14%, 75%);
   font-weight: 600;
 
 }
@@ -165,7 +192,7 @@ small{
   padding: 10px 0;
   align-items: center;
   width: 120px;
-  background-color: whitesmoke;
+  background-color: hsl(223, 64%, 98%);
 }
 .hero__inner-rightCheckOut{
   background-color: hsl(26, 100%, 55%);
@@ -176,6 +203,61 @@ small{
   border-radius: 10px;
   cursor: pointer;
   width: 50%;
+}
+.modal{
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+  width: 310px;
+  min-height: 200px;
+  border-radius: 10px;
+  position: absolute;
+  top: 12%;
+  right: 6%;
+  z-index: 100;
+  scale: .8;
+  animation: displayCart .3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+@keyframes displayCart {
+  100%{
+    scale: 1;
+  }
+}
+.modal__inner{
+  padding: 10px;
+}
+.modal__inner h4{
+  align-self: flex-start;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+  padding-bottom: 1rem;
+}
+.modal__inner button{
+  background-color: hsl(26, 100%, 55%);
+  padding: 10px;
+  color: white;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+.modal__inner-contentInfo p, span{
+  font-size: .8em;
+  color:hsl(219, 9%, 45%);
+}
+.modal__inner-contentTotal{
+  margin-left: 5px;
+  color: black;
+  font-weight: 700;
+}
+.modal__inner-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.modal__inner-contentDelete{
+  cursor: pointer;
 }
 
 

@@ -1,6 +1,6 @@
 import './App.css';
-import ButtonProps from './ButtonProps';
-import Input from './Input';
+// import ButtonProps from './ButtonProps';
+// import Input from './Input';
 import HomePage from './Pages/HomePage';
 
 
@@ -20,8 +20,8 @@ function App() {
   return (
     <>
     <HomePage />
-    <ButtonProps handleClick={(event, id) => console.log("HELLO__", event.type, id)}/>
-    <Input value='' handleChange={(event) => console.log(event)} />
+    {/* <ButtonProps handleClick={(event, id) => console.log("HELLO__", event.type, id)}/>
+    <Input value='' handleChange={(event) => console.log(event)} /> */}
     </>
   )
 }

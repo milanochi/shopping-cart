@@ -1,11 +1,11 @@
-import React from 'react';
 import Cart from '/src/assets/icon-cart.svg';
 import Plus from '/src/assets/icon-plus.svg';
 import Minus from '/src/assets/icon-minus.svg';
 
 const HeroSection = () => {
+    
   return (
-    <main className='hero'>
+    <main className='hero' style={{position: 'relative'}}>
         <section className='hero__inner'>
             <div className='hero__inner-left'>
                 <div className='hero__inner-img'></div>
@@ -38,13 +38,13 @@ const HeroSection = () => {
                             </div>
                             <div className='hero__inner-rightCheckOut'>
                                 <img src={Cart} style={{cursor: 'pointer', color:'white'}}alt='cart'/>
-                                <span style={{marginLeft: '8px', color: 'white', fontWeight: '500'}}>Add to Cart</span>
+                                <span style={{marginLeft: '8px', color: 'white', fontWeight: '500', fontSize:'1em'}}>Add to Cart</span>
                             </div>
                         </div>
                     </div>
                     </div>        
             </div>
-        </section>
+        </section>  
     </main>
   )
 }
