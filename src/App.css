@@ -200,7 +200,7 @@ small{
   width: 50%;
   border: none; 
 }
-.hero__inner-rightCheckOut, h2{
+.hero__inner-rightCheckOut, h5{
   color: white;
   font-weight: 600;
   font-size: 1em;
@@ -315,7 +315,7 @@ small{
     width: 100%;
     justify-content: center;
   }
-  .hero__inner-rightCheckOut, h2{
+  .hero__inner-rightCheckOut, h5{
     color: white;
     font-weight: 700;
     font-size: 1em;
