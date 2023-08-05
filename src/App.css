@@ -199,6 +199,13 @@ small{
   cursor: pointer;
   width: 50%;
   border: none;
+  margin-left: 8px;
+  
+}
+.hero__inner-rightCheckOut span{
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
 }
 .modal{
   background-color: white;
