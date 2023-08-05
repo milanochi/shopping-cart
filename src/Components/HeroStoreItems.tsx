@@ -47,17 +47,17 @@ const HeroStoreItems = ({ id, name, price, img, thumbnails, slashed }: StoreItem
                         </div>
                         <div className='hero__inner-rightActions'>
                             <div className='hero__inner-rightModify'>
-                                <button style={{border: 'none', background: 'none', width: '20px'}}>
-                                    <img src={Minus} onClick={() => decreaseCartQuantity(id)} style={{cursor: 'pointer'}}alt='minus'/>
+                                <button onClick={() => decreaseCartQuantity(id)} style={{border: 'none', background: 'none', width: '20px'}}>
+                                    <img src={Minus} style={{cursor: 'pointer'}}alt='minus'/>
                                 </button>
                                 <h3>{quantity}</h3>
-                                <button style={{border: 'none', background: 'none', width: '20px'}}>
-                                    <img src={Plus} onClick={() => increaseCartQuantity(id)} style={{cursor: 'pointer',marginTop: '8px'}}alt='plus'/>
+                                <button onClick={() => increaseCartQuantity(id)} style={{border: 'none', background: 'none', width: '20px'}}>
+                                    <img src={Plus}  style={{cursor: 'pointer',marginTop: '8px'}}alt='plus'/>
                                 </button>
                             </div>
                             <button className='hero__inner-rightCheckOut' onClick={() => increaseCartQuantity(id)}>
-                                <img src={Cart} style={{cursor: 'pointer', color:'white'}}alt='cart'/>
-                                    <span>Add to Cart</span>
+                                <div><img src={Cart} style={{cursor: 'pointer', color:'white'}}alt='cart'/></div>
+                                <span>Add to Cart</span>
                             </button>
                         </div>
                     </div>
