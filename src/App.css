@@ -198,14 +198,13 @@ small{
   border-radius: 10px;
   cursor: pointer;
   width: 50%;
-  border: none;
-  margin-left: 8px;
-  
+  border: none; 
 }
 .hero__inner-rightCheckOut span{
   color: white;
   font-weight: 600;
   font-size: 1em;
+  margin-left: 8px;
 }
 .modal{
   background-color: white;
@@ -315,7 +314,12 @@ small{
   .hero__inner-rightCheckOut{
     width: 100%;
     justify-content: center;
-    
+  }
+  .hero__inner-rightCheckOut span{
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    margin-left: 8px;
   }
   .hero__inner-rightWrap{
     flex-direction: column;
