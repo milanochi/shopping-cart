@@ -16,12 +16,11 @@ small{
   color:  hsl(26, 100%, 55%);
 }
 .navbar{
-  width: 100%;
+  width: 100%;  
   position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  
+  z-index: 1;
+  background-color: white;
 }
 .navbar__inner{
   margin: 0 auto;
@@ -30,8 +29,8 @@ small{
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(128, 128, 128, 0.377);
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-top: 25px; 
 }
 .navbar__inner-left{
   display: flex;
@@ -208,8 +207,8 @@ small{
   min-height: 150px;
   border-radius: 10px;
   position: absolute;
-  top: 12%;
-  right: 6%;
+  top: 80%;
+  right: 7%;
   z-index: 100;
   scale: .8;
   animation: displayCart .3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;

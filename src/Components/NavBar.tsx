@@ -9,9 +9,9 @@ const NavBar = () => {
     const [showCart, setShowCart] = useState(false)
     const { cartQuantity } = useShoppingCart()
   return (
-    <div>
-        <header className='navbar'>
-            <nav className='navbar__inner'>
+    <nav className='navbar'>
+       
+            <div className='navbar__inner'>
                 <div className='navbar__inner-left'>
                     <div><img src={Logo} alt='logo'/></div>
                     <ul className='navbar__inner-left2'>
@@ -28,14 +28,13 @@ const NavBar = () => {
                     </div>
                     <div className='navbar__inner-right2' onClick={() => setShowCart(!showCart)}></div>
                 </div>
-            </nav>
-        </header>
+            </div>
         <div>
             {
             showCart && <Modal />
             }
         </div>  
-    </div>
+    </nav>
   )
 }
 
