@@ -47,17 +47,17 @@ const HeroStoreItems = ({ id, name, price, img, thumbnails, slashed }: StoreItem
                         </div>
                         <div className='hero__inner-rightActions'>
                             <div className='hero__inner-rightModify'>
-                                <button style={{border: 'none', background: 'none'}}>
-                                    <img src={Minus} onClick={() => decreaseCartQuantity(id)} style={{cursor: 'pointer'}}alt='plus'/>
+                                <button style={{border: 'none', background: 'none', width: '20px'}}>
+                                    <img src={Minus} onClick={() => decreaseCartQuantity(id)} style={{cursor: 'pointer'}}alt='minus'/>
                                 </button>
                                 <h3>{quantity}</h3>
-                                <button style={{border: 'none', background: 'none'}}>
-                                    <img src={Plus} onClick={() => increaseCartQuantity(id)} style={{cursor: 'pointer'}}alt='minus'/>
+                                <button style={{border: 'none', background: 'none', width: '20px'}}>
+                                    <img src={Plus} onClick={() => increaseCartQuantity(id)} style={{cursor: 'pointer',marginTop: '8px'}}alt='plus'/>
                                 </button>
                             </div>
                             <button className='hero__inner-rightCheckOut' onClick={() => increaseCartQuantity(id)}>
                                 <img src={Cart} style={{cursor: 'pointer', color:'white'}}alt='cart'/>
-                                    <span style={{marginLeft: '8px', color: 'white', fontWeight: '600', fontSize:'1em'}}>Add to Cart</span>
+                                    <span style={{marginLeft: '8px', color: 'white', fontWeight: '700', fontSize:'1.1em'}}>Add to Cart</span>
                             </button>
                         </div>
                     </div>
