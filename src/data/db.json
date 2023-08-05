@@ -1,29 +1,29 @@
 [
       {
         "id": 1,
-        "name": "Nike",
+        "name": "Nike Air Jordan",
         "price": 125,
-        "img": "/imgs/image-product-1.jpg",
-        "thumbnails": "/imgs/image-product-1-thumbnail.jpg",
+        "img": "/imgs/hero-nike.jpg",
+        "thumbnails": "/imgs/nike3.jpg",
         "slashed": 250,
-        "quantity": 2
+        "quantity": 10
       },
       {
         "id": 2,
-        "name": "Addidas", 
+        "name": "Adidas", 
         "price": 90,
-        "img": "/imgs/image-product-1.jpg",
-        "thumbnails": "/imgs/image-product-1-thumbnail.jpg",
+        "img": "/imgs/hero-adidas.jpg",
+        "thumbnails": "/imgs/adidas3.jpg",
         "slashed": 180,
-        "quantity": 3
+        "quantity": 15
       },
       {
         "id": 3,
         "name": "Puma",
         "price": 100,
         "img": "/imgs/image-product-1.jpg",
-        "thumbnails": "/imgs/image-product-1-thumbnail.jpg",
+        "thumbnails": "/imgs/image-product-3-thumbnail.jpg",
         "slashed": 180,
-        "quantity": 1
+        "quantity": 20
       }
 ]

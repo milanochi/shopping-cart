@@ -5,6 +5,7 @@ import Items from '../data/db.json';
 type CartItemProps = {
     id: number
     quantity: number
+    
 }
 
 const CartItems = ({ id, quantity }: CartItemProps) => {
@@ -16,7 +17,7 @@ const CartItems = ({ id, quantity }: CartItemProps) => {
     <div className='modal__inner-content'>
         <img src={item.img} alt='cart-item' style={{borderRadius: '10px', width: '60px', height: '60px', objectFit: 'cover', marginTop: '1rem'}}/>
         <div className='modal__inner-contentInfo'>
-            <p>Fall Sneakers</p>
+            <p>{item.name}</p>
             <span>$125.00</span><span className='modal__inner-contentCount'> X {quantity}</span><span className='modal__inner-contentTotal'>$375</span>
         </div>
     <div>
