@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import Logo from '/src/assets/logo.svg';
 import Cart from '/src/assets/icon-cart.svg';
 import Modal from './Modal';
+import { useShoppingCart } from '../Context/ShoppingCartContext';
 
 
 const NavBar = () => {
     const [showCart, setShowCart] = useState(false)
+    const { cartQuantity } = useShoppingCart()
   return (
     <div>
         <header className='navbar'>
@@ -22,7 +24,7 @@ const NavBar = () => {
                 <div className='navbar__inner-right'>
                     <div className='navbar__inner-cart' onClick={() => setShowCart(!showCart)}>
                         <img src={Cart} style={{cursor: 'pointer'}}alt='cart'/>
-                        <div className='navbar__inner-cartNumber'>1</div>
+                        <div className='navbar__inner-cartNumber'>{cartQuantity}</div>
                     </div>
                     <div className='navbar__inner-right2' onClick={() => setShowCart(!showCart)}></div>
                 </div>

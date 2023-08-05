@@ -1,4 +1,5 @@
 import './App.css';
+import { ShoppingCartProvider } from './Context/ShoppingCartContext';
 // import ButtonProps from './ButtonProps';
 // import Input from './Input';
 import HomePage from './Pages/HomePage';
@@ -19,7 +20,10 @@ function App() {
   ]
   return (
     <>
-    <HomePage />
+    <ShoppingCartProvider>
+      <HomePage />
+    </ShoppingCartProvider>
+   
     {/* <ButtonProps handleClick={(event, id) => console.log("HELLO__", event.type, id)}/>
     <Input value='' handleChange={(event) => console.log(event)} /> */}
     </>

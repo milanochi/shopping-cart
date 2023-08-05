@@ -7,6 +7,9 @@
   box-sizing: border-box;
   font-family: 'Poppins';
 }
+.hide{
+  display: none;
+}
 small{
   letter-spacing: 1px;
   font-weight: 700;
@@ -35,6 +38,7 @@ small{
   justify-content: space-between;
   align-items: center;
   width: 500px;
+ 
 }
 .navbar__inner-left2{
   display: flex;
@@ -70,7 +74,7 @@ small{
   right: 0;
   transform: translate(40%, -95%);
   color: white;
-  font-size: .9em;
+  font-size: .8em;
   font-weight: 600;
 }
 .navbar__inner-right2{
@@ -95,19 +99,17 @@ small{
 }
 .hero__inner-left{
   width: 50%;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero__inner-img{
   height: 380px;
   width: 380px;
   border-radius: 20px;
-  background-image: url('/src/assets/image-product-1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 'center';
-  margin: 2rem auto 1.5rem auto;
+  object-fit: cover;
+  margin: 1rem 0;
 }
-
 .hero__inner-thumb{
   margin: 0 auto;
   width: 380px;
@@ -122,12 +124,7 @@ small{
   background-position: 'center';
 }
 /* THUMBNAILS */
-.img1{
-  background-image: url('/src/assets/image-product-1-thumbnail.jpg');
-}
-.img2{
-  background-image: url('/src/assets/image-product-4.jpg');
-}
+
 .hero__inner-right{
   display: flex;
   flex-direction: column;
@@ -150,7 +147,6 @@ small{
   margin-bottom: 1.5rem;
   line-height: 1.6;
   color: hsl(219, 9%, 45%);
- 
 }
 .hero__inner-rightBottom{
   font-size: .8em;
@@ -177,7 +173,7 @@ small{
 .hero__inner-rightSlashedPrice{
   color: hsl(220, 14%, 75%);
   font-weight: 600;
-
+  text-decoration: line-through;
 }
 .hero__inner-rightActions{
   display: flex;
@@ -203,13 +199,13 @@ small{
   border-radius: 10px;
   cursor: pointer;
   width: 50%;
- 
+  border: none;
 }
 .modal{
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
   width: 310px;
-  min-height: 200px;
+  min-height: 150px;
   border-radius: 10px;
   position: absolute;
   top: 12%;
@@ -263,6 +259,12 @@ small{
 .modal__inner-contentDelete{
   cursor: pointer;
 }
+.modal__innerEmpty{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  align-items: flex-end;
+}
 
 
 @media (max-width: 900px) {
@@ -280,6 +282,7 @@ small{
   
   .hero__inner-thumb{
     width: 100%;
+    display: none;
   }
   .navbar__inner-left2{
     display: none;
