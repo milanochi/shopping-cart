@@ -57,7 +57,7 @@ const HeroStoreItems = ({ id, name, price, img, thumbnails, slashed }: StoreItem
                             </div>
                             <button className='hero__inner-rightCheckOut' onClick={() => increaseCartQuantity(id)}>
                                 <div><img src={Cart} style={{cursor: 'pointer', color:'white'}}alt='cart'/></div>
-                                <h4>Add to Cart</h4>
+                                <h2>Add to Cart</h2>
                             </button>
                         </div>
                     </div>
