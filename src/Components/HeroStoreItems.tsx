@@ -10,9 +10,11 @@ type StoreItemProps = {
     price: number
     img: string
     thumbnails: string
+    slashed: number
+
 }
 
-const HeroStoreItems = ({ id, name, price, img, thumbnails }: StoreItemProps) => {
+const HeroStoreItems = ({ id, name, price, img, thumbnails, slashed }: StoreItemProps) => {
     const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity} = useShoppingCart()
     const quantity = getItemQuantity(id)
   return (
@@ -41,7 +43,7 @@ const HeroStoreItems = ({ id, name, price, img, thumbnails }: StoreItemProps) =>
                             <div className='hero__inner-rightCurrentPrice'>
                                 <h2>{FormatCurrency(price)}</h2><span>50%</span>
                             </div>
-                            <div className='hero__inner-rightSlashedPrice'>$250.00</div>
+                            <div className='hero__inner-rightSlashedPrice'>{FormatCurrency(slashed)}</div>
                         </div>
                         <div className='hero__inner-rightActions'>
                             <div className='hero__inner-rightModify'>
