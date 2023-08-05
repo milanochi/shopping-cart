@@ -1,4 +1,4 @@
-const CURRENCY_FORMATTER = new Intl.NumberFormat('USD', {
+const CURRENCY_FORMATTER = new Intl.NumberFormat('en-IN', {
     currency: 'USD', style: 'currency'
 })
 
