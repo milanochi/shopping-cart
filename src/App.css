@@ -245,7 +245,7 @@ small{
   border-radius: 10px;
   border: none;
 }
-.modal__inner-contentInfo p, span{
+.modal__inner-contentInfo p  span{
   font-size: .8em;
   color:hsl(219, 9%, 45%);
 }
