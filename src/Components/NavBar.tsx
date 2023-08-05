@@ -13,7 +13,7 @@ const NavBar = () => {
        
             <div className='navbar__inner'>
                 <div className='navbar__inner-left'>
-                    <div><img src={Logo} alt='logo'/></div>
+                    <div><img src={Logo} className='logo' alt='logo'/></div>
                     <ul className='navbar__inner-left2'>
                         <li>Collections</li>
                         <li>Men</li>

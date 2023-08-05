@@ -211,7 +211,7 @@ small{
   right: 7%;
   z-index: 100;
   scale: .8;
-  animation: displayCart .3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: displayCart .2s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 .modal__inner button{
   font-weight: 600;
@@ -267,6 +267,12 @@ small{
 
 
 @media (max-width: 900px) {
+  .logo{
+    height: 15px;
+  }
+  .navbar__inner{
+    padding-bottom: 18px;
+  }
   .hero__inner{
     flex-direction: column;
    justify-content: center;
