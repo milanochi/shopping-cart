@@ -200,7 +200,7 @@ small{
   width: 50%;
   border: none; 
 }
-.hero__inner-rightCheckOut span{
+.hero__inner-rightCheckOut h4{
   color: white;
   font-weight: 600;
   font-size: 1em;
@@ -245,7 +245,7 @@ small{
   border-radius: 10px;
   border: none;
 }
-.modal__inner-contentInfo p  span{
+.modal__inner-contentInfo p,  span{
   font-size: .8em;
   color:hsl(219, 9%, 45%);
 }
@@ -315,7 +315,7 @@ small{
     width: 100%;
     justify-content: center;
   }
-  .hero__inner-rightCheckOut span{
+  .hero__inner-rightCheckOut h4{
     color: white;
     font-weight: 700;
     font-size: 1em;
