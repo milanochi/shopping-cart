@@ -3,8 +3,8 @@
         "id": 1,
         "name": "Nike",
         "price": 125,
-        "img": "/src/assets/image-product-1.jpg",
-        "thumbnails": "/src/assets/image-product-1-thumbnail.jpg",
+        "img": "/public/image-product-1.jpg",
+        "thumbnails": "/public/image-product-1-thumbnail.jpg",
         "slashed": 250,
         "quantity": 2
       },
@@ -12,8 +12,8 @@
         "id": 2,
         "name": "Addidas", 
         "price": 90,
-        "img": "/src/assets/image-product-1.jpg",
-        "thumbnails": "/src/assets/image-product-1-thumbnail.jpg",
+        "img": "/public/image-product-1.jpg",
+        "thumbnails": "/public/image-product-1-thumbnail.jpg",
         "slashed": 180,
         "quantity": 3
       },
@@ -21,8 +21,8 @@
         "id": 3,
         "name": "Puma",
         "price": 100,
-        "img": "/src/assets/image-product-1.jpg",
-        "thumbnails": "/src/assets/image-product-1-thumbnail.jpg",
+        "img": "/public/image-product-1.jpg",
+        "thumbnails": "/public/image-product-1-thumbnail.jpg",
         "slashed": 180,
         "quantity": 1
       }
