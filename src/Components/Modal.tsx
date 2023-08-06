@@ -12,7 +12,7 @@ const Modal = () => {
                        No Cart Items.
                    </div>
                 }
-                <button className={`${cartItems.length < 1 && 'hide'}`} style={{fontWeight: '700'}}>Check Out</button>
+                <button className={`${cartItems.length < 1 && 'hide'}`}>Check Out</button>
             </div>
     </section>
   )
