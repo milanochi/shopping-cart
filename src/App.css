@@ -221,7 +221,7 @@ small{
 }
 .modal__inner button{
   font-weight: 700;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 @keyframes displayCart {
   100%{
