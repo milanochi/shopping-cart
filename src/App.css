@@ -412,6 +412,7 @@ small{
   .hero__inner-rightCheckOut{
     width: 100%;
     justify-content: center;
+    padding-top: 10px;
   }
   .hero__inner-rightCheckOut, h5{
     color: white;
