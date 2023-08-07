@@ -6,6 +6,7 @@
         "img": "/imgs/hero-nike.jpg",
         "thumbnails": "/imgs/nike3.jpg",
         "slashed": 250,
+        "carousel": ["/imgs/hero-nike.jpg", "/imgs/nike1.jpg", "/imgs/nike2.jpg", "/imgs/nike3.jpg"],
         "quantity": 10
       },
       {
@@ -15,6 +16,7 @@
         "img": "/imgs/hero-adidas.jpg",
         "thumbnails": "/imgs/adidas3.jpg",
         "slashed": 180,
+        "carousel": ["/imgs/hero-adidas.jpg", "/imgs/adidas1.jpg", "/imgs/adidas2.jpg", "/imgs/adidas3.jpg"],
         "quantity": 15
       },
       {
@@ -24,6 +26,7 @@
         "img": "/imgs/image-product-1.jpg",
         "thumbnails": "/imgs/image-product-3-thumbnail.jpg",
         "slashed": 180,
+        "carousel": ["/imgs/hero-nike.jpg", "/imgs/nike1.jpg", "/imgs/nike2.jpg", "/imgs/nike3.jpg"],
         "quantity": 20
       }
 ]

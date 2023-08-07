@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700;800;900&family=Montserrat:wght@300;500;700;800&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@500&family=Rubik:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=Work+Sans:wght@200;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700;800;900&family=Montserrat:wght@300;500;700;800&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@500&family=Rubik:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=Work+Sans:wght@200;400;500;600;700&display=swap'); */
 *{
   padding: 0;
   margin: 0;
@@ -119,8 +119,7 @@ small{
   height: 80px;
   width: 80px;
   border-radius: 14px;
-  background-size: cover;
-  background-position: 'center';
+  object-fit: cover;
 }
 /* THUMBNAILS */
 
@@ -186,7 +185,7 @@ small{
   align-items: center;
   border-radius: 10px;
   padding: 10px 0;
-  width: 120px;
+  width: 100%;
   background-color: hsl(223, 64%, 98%);
 }
 .hero__inner-rightCheckOut{
@@ -194,10 +193,10 @@ small{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 12px 10px;
+  padding: 10px;
   border-radius: 10px;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
   border: none; 
 }
 .hero__inner-rightCheckOut, h5{
@@ -260,6 +259,7 @@ small{
   justify-content: space-between;
   width: 100%;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .modal__inner-contentDelete{
   cursor: pointer;

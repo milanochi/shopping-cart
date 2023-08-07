@@ -3,6 +3,7 @@ import Plus from '/src/assets/icon-plus.svg';
 import Minus from '/src/assets/icon-minus.svg';
 import FormatCurrency from '../Utilities/FormatCurrency';
 import { useShoppingCart } from '../Context/ShoppingCartContext';
+import Carousel from './Carousel';
 
 type StoreItemProps = {
     id: number
@@ -11,10 +12,12 @@ type StoreItemProps = {
     img: string
     thumbnails: string
     slashed: number
+    carousel: string []
 
 }
 
-const HeroStoreItems = ({ id, name, price, img, thumbnails, slashed }: StoreItemProps) => {
+
+const HeroStoreItems = ({ id, name, price, img, thumbnails, slashed, carousel }: StoreItemProps) => {
     const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity} = useShoppingCart()
     const quantity = getItemQuantity(id)
   return (
@@ -30,6 +33,7 @@ const HeroStoreItems = ({ id, name, price, img, thumbnails, slashed }: StoreItem
                     <img src={thumbnails} className='hero__inner-thumbnail' alt='thumbnail'/>
                 </div>
                 </div>
+                <Carousel slide={carousel}/>
             </div>
             <div className='hero__inner-right'>
                 <div className='hero__inner-rightWrap'>
@@ -48,11 +52,11 @@ const HeroStoreItems = ({ id, name, price, img, thumbnails, slashed }: StoreItem
                         <div className='hero__inner-rightActions'>
                             <div className='hero__inner-rightModify'>
                                 <button onClick={() => decreaseCartQuantity(id)} style={{border: 'none', background: 'none', width: '20px'}}>
-                                    <img src={Minus} style={{cursor: 'pointer'}}alt='minus'/>
+                                    <img src={Minus} style={{cursor: 'pointer', display: 'flex', alignItems: 'center'}}alt='minus'/>
                                 </button>
                                 <h3>{quantity}</h3>
                                 <button onClick={() => increaseCartQuantity(id)} style={{border: 'none', background: 'none', width: '20px'}}>
-                                    <img src={Plus}  style={{cursor: 'pointer',marginTop: '8px'}}alt='plus'/>
+                                    <img src={Plus}  style={{cursor: 'pointer', display: 'flex', alignItems: 'center', height: '100%'}}alt='plus'/>
                                 </button>
                             </div>
                             <button className='hero__inner-rightCheckOut' onClick={() => increaseCartQuantity(id)}>
@@ -61,7 +65,7 @@ const HeroStoreItems = ({ id, name, price, img, thumbnails, slashed }: StoreItem
                             </button>
                         </div>
                     </div>
-                    </div>        
+                </div>        
             </div>
         </section>  
     </div>
