@@ -1,4 +1,4 @@
-import Cart from '/src/assets/icon-cart.svg';
+import WCart from '/src/assets/icon-white-cart.png';
 import Plus from '/src/assets/icon-plus.svg';
 import Minus from '/src/assets/icon-minus.svg';
 import FormatCurrency from '../Utilities/FormatCurrency';
@@ -68,7 +68,7 @@ const HeroStoreItems = ({ id, name, price, img, slashed, carousel }: StoreItemPr
                                 </button>
                             </div>
                             <button className='hero__inner-rightCheckOut' onClick={() => increaseCartQuantity(id)}>
-                                <div><img src={Cart} style={{cursor: 'pointer', color:'white'}}alt='cart'/></div>
+                                <div><img src={WCart} style={{cursor: 'pointer', color:'white', height: '25px', width: '25px'}}alt='cart'/></div>
                                 <h5>Add to Cart</h5>
                             </button>
                         </div>

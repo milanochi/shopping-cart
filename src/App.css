@@ -98,6 +98,7 @@ small{
   min-height: 90vh;
   margin: 0 auto;
   display: flex;
+ 
 }
 .hero__inner-left{
   width: 50%;
@@ -173,6 +174,7 @@ small{
   border-radius: 20px;
   object-fit: cover;
   margin: 1rem 0;
+  cursor: zoom-in;
 }
 .hero__inner-img2{
   height: 380px;
@@ -181,7 +183,7 @@ small{
   object-fit: cover;
   margin: 1rem 0;
   transform: scale(0);
-  animation: scale .1s ease-in-out forwards;
+  animation: scale .1s ease-in forwards;
 }
 @keyframes scale {
  
@@ -257,7 +259,7 @@ small{
 .hero__inner-rightActions{
   display: flex;
   justify-content: space-between;
-  width: 310px;
+  width: 100%;
   margin-top: 1rem;
 }
 .hero__inner-rightModify{
@@ -273,18 +275,19 @@ small{
   background-color: hsl(26, 100%, 55%);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 10px;
+  justify-content: center;
+  padding: 4px 20px;
   border-radius: 10px;
   cursor: pointer;
   width: 100%;
   border: none; 
+  margin-left: 1rem;
 }
 .hero__inner-rightCheckOut, h5{
   color: white;
   font-weight: 600;
   font-size: 1em;
-  margin-left: 8px;
+  margin-left: 4px;
 }
 .modal{
   background-color: white;
