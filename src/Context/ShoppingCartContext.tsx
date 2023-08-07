@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext } from 'react'
+import { createContext, ReactNode, useContext, useState } from 'react'
 import { useLocalStorage } from '../Hooks/useLocalStorage'
 
 const ShoppingCartContext = createContext({} as ShoppingCartContext)
@@ -68,6 +68,11 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     })
   }
   const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0)
+  const [carouselCount, setCarouselCount] = useState(0)
+  const carouselId = (id: number) => {
+    console.log(id)
+    setCarouselCount(id)
+}
 
   return <ShoppingCartContext.Provider value={{
     getItemQuantity,

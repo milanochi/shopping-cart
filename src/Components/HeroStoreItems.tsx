@@ -4,37 +4,45 @@ import Minus from '/src/assets/icon-minus.svg';
 import FormatCurrency from '../Utilities/FormatCurrency';
 import { useShoppingCart } from '../Context/ShoppingCartContext';
 import Carousel from './Carousel';
+import { useState } from 'react';
+import MobileCarousel from './MobileCarousel';
+
 
 type StoreItemProps = {
     id: number
     name: string
     price: number
     img: string
-    thumbnails: string
+    thumbnails?: string
     slashed: number
     carousel: string []
 
 }
 
 
-const HeroStoreItems = ({ id, name, price, img, thumbnails, slashed, carousel }: StoreItemProps) => {
+const HeroStoreItems = ({ id, name, price, img, slashed, carousel }: StoreItemProps) => {
     const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity} = useShoppingCart()
     const quantity = getItemQuantity(id)
+   const [showCarousel, setShowCarousel] = useState(false)
+  
   return (
-    <div>
+    <div>{
+        showCarousel && <Carousel slide={carousel} setShowCarousel={setShowCarousel}/>
+        }
          <section className='hero__inner'>
             <div className='hero__inner-left'>
                 <div className='hero__inner-leftWrap'>
-                    <img src={img} className='hero__inner-img' alt='hero-img'/>
+                    <img src={img} className='hero__inner-img' alt='hero-img' onClick={() => setShowCarousel(true)}/>
                     <div className='hero__inner-thumb'>
-                    <img src={thumbnails} className='hero__inner-thumbnail' alt='thumbnail'/>
-                    <img src={thumbnails} className='hero__inner-thumbnail' alt='thumbnail'/>
-                    <img src={thumbnails} className='hero__inner-thumbnail' alt='thumbnail'/>
-                    <img src={thumbnails} className='hero__inner-thumbnail' alt='thumbnail'/>
+                    <img src={carousel[0]} className='hero__inner-thumbnail' alt='thumbnail'/>
+                    <img src={carousel[1]} className='hero__inner-thumbnail' alt='thumbnail'/>
+                    <img src={carousel[2]} className='hero__inner-thumbnail' alt='thumbnail'/>
+                    <img src={carousel[3]} className='hero__inner-thumbnail' alt='thumbnail'/>
                 </div>
                 </div>
-                <Carousel slide={carousel}/>
+                
             </div>
+            <MobileCarousel slide={carousel}/>
             <div className='hero__inner-right'>
                 <div className='hero__inner-rightWrap'>
                     <div className='hero__inner-rightTop'>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export function useCycle(images: string []) {
+   
     const [current, setCurrent] = useState(0)
 
     const next = () => {

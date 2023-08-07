@@ -26,7 +26,7 @@
         "img": "/imgs/image-product-1.jpg",
         "thumbnails": "/imgs/image-product-3-thumbnail.jpg",
         "slashed": 180,
-        "carousel": ["/imgs/hero-nike.jpg", "/imgs/nike1.jpg", "/imgs/nike2.jpg", "/imgs/nike3.jpg"],
+        "carousel": ["/imgs/image-product-1.jpg", "/imgs/image-product-3-thumbnail.jpg", "/imgs/image-product-2-thumbnail.jpg", "/imgs/image-product-1-thumbnail.jpg"],
         "quantity": 20
       }
 ]
