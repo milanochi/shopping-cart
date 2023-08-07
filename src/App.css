@@ -149,20 +149,20 @@ small{
 .hero-innerBtn1{
   position: absolute;
   top: 40%;
-  left: -3%;
+  left: -6%;
 }
 .hero-innerBtn2{
   position: absolute;
   top: 40%;
   right: 0;
-  right: -3%;
+  right: -6%;
 }
 .hero-innerClose{
   display: block;
   position: absolute;
-  top: 0;
+  top: -4%;
   height: 30px;
-  right: -5%;
+  right: -10%;
   background-color:hsl(26, 100%, 55%);
   padding: 5px;
   cursor: pointer;
@@ -181,14 +181,14 @@ small{
   width: 380px;
   border-radius: 20px;
   object-fit: cover;
-  margin: 1rem 0;
+  margin: 1rem 0 2.2rem 0;
   transform: scale(0);
   animation: scale .1s ease-in forwards;
 }
 @keyframes scale {
  
   100%{
-    transform: scale(1);
+    transform: scale(1.1);
     opacity: 1;
   }
 }
@@ -407,12 +407,12 @@ small{
   .hero__inner-rightModify{
     width: 100%;
     margin-bottom: 1rem;
-    padding: 12px 0;
+    padding: 11px 0;
   }
   .hero__inner-rightCheckOut{
     width: 100%;
     justify-content: center;
-    padding: 12px 0;
+    padding: 11px 0;
     align-items: center;
   }
   .hero__inner-rightCheckOut, h5{
