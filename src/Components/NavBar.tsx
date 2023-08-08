@@ -4,13 +4,11 @@ import Cart from '/src/assets/icon-cart.svg';
 import Modal from './Modal';
 import { useShoppingCart } from '../Context/ShoppingCartContext';
 
-
 const NavBar = () => {
     const [showCart, setShowCart] = useState(false)
     const { cartQuantity } = useShoppingCart()
   return (
     <nav className='navbar'>
-       
             <div className='navbar__inner'>
                 <div className='navbar__inner-left'>
                     <div><img src={Logo} className='logo' alt='logo'/></div>

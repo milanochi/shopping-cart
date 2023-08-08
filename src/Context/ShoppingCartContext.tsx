@@ -13,7 +13,8 @@ type ShoppingCartContext = {
   decreaseCartQuantity: (id: number) => void
   removeFromCart: (id: number) => void
   cartQuantity: number
-  cartItems: CartItems[] 
+  cartItems: CartItems[]
+  sumCartItems: (initialPrice: number, quantity: number) => number 
 }
 
 type CartItems = {
@@ -68,10 +69,10 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     })
   }
   const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0)
-  const [carouselCount, setCarouselCount] = useState(0)
-  const carouselId = (id: number) => {
-    console.log(id)
-    setCarouselCount(id)
+  
+  const sumCartItems = (initialPrice: number, quantity: number): number => {
+    return initialPrice * quantity
+    
 }
 
   return <ShoppingCartContext.Provider value={{
@@ -79,8 +80,10 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     increaseCartQuantity,
     decreaseCartQuantity,
     removeFromCart,
+    sumCartItems,
     cartItems,
     cartQuantity,
+    
   }}>
     {
       children

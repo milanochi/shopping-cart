@@ -342,11 +342,27 @@ small{
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: .6rem;
   margin-top: 1rem;
 }
 .modal__inner-contentDelete{
   cursor: pointer;
+}
+.modal__inner-total{
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 6px;
+  font-family: 'Poppins';
+  font-size: .9em;
+  font-weight: 700;
+  align-items: center;
+}
+.modal__inner-total span{
+  font-size: .9em;
+  margin-right: .3rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
 }
 .modal__innerEmpty{
   display: flex;

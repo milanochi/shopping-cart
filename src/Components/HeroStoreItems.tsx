@@ -59,12 +59,12 @@ const HeroStoreItems = ({ id, name, price, img, slashed, carousel }: StoreItemPr
                         </div>
                         <div className='hero__inner-rightActions'>
                             <div className='hero__inner-rightModify'>
-                                <button onClick={() => decreaseCartQuantity(id)} style={{border: 'none', background: 'none', width: '20px'}}>
-                                    <img src={Minus} style={{cursor: 'pointer', display: 'flex', alignItems: 'center'}}alt='minus'/>
+                                <button onClick={() => decreaseCartQuantity(id)} style={{cursor: 'pointer',border: 'none',background: 'none', width: '20px'}}>
+                                    <img src={Minus} style={{ display: 'flex', alignItems: 'center'}}alt='minus'/>
                                 </button>
                                 <h3>{quantity}</h3>
-                                <button onClick={() => increaseCartQuantity(id)} style={{border: 'none', background: 'none', width: '20px'}}>
-                                    <img src={Plus}  style={{cursor: 'pointer', display: 'flex', alignItems: 'center', height: '100%'}}alt='plus'/>
+                                <button onClick={() => increaseCartQuantity(id)} style={{cursor: 'pointer', border: 'none', background: 'none', width: '20px'}}>
+                                    <img src={Plus}  style={{cursor: 'pointer', display: 'flex', alignItems: 'center'}}alt='plus'/>
                                 </button>
                             </div>
                             <button className='hero__inner-rightCheckOut' onClick={() => increaseCartQuantity(id)}>
