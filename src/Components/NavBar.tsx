@@ -21,7 +21,7 @@ const NavBar = () => {
                 </div>
                 <div className='navbar__inner-right'>
                     <div className='navbar__inner-cart' onClick={() => setShowCart(!showCart)}>
-                        <img src={Cart} style={{cursor: 'pointer'}}alt='cart'/>
+                        <img src={Cart}  style={{cursor: 'pointer'}}alt='cart'/>
                         <div className='navbar__inner-cartNumber'>{cartQuantity}</div>
                     </div>
                     <div className='navbar__inner-right2' onClick={() => setShowCart(!showCart)}></div>

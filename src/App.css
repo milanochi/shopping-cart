@@ -224,6 +224,7 @@ small{
 .hero__inner-rightTop h1{
   font-size: 2rem;
   line-height: 1.2;
+  margin-top: .5rem;
 }
 .hero__inner-rightBottom p{
   margin-bottom: 1.5rem;
@@ -261,7 +262,7 @@ small{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .hero__inner-rightModify{
   display: flex;
@@ -379,6 +380,9 @@ small{
   }
   .navbar__inner{
     padding-bottom: 18px;
+  }
+  .navbar__inner-cart{
+    margin-right: 1rem;
   }
   .hero__inner{
     flex-direction: column;
