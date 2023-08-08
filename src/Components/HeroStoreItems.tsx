@@ -54,7 +54,7 @@ const HeroStoreItems = ({ id, name, price, img, slashed, carousel, stock }: Stor
                         <div style={{fontSize: '1em', marginBottom:'.5rem',color: 'hsl(26, 100%, 55%)'}}>Stock remaining:<span style={{fontSize: '1.2em',marginLeft: '.2rem', fontWeight: '700', color: '#333'}}>{stock}</span></div>
                         <div className='hero__inner-rightPrice'>
                             <div className='hero__inner-rightCurrentPrice'>
-                                <h2>{FormatCurrency(price)}</h2><span>50%</span>
+                                <h2 style={{color: '#333'}}>{FormatCurrency(price)}</h2><span>50%</span>
                             </div>
                             <div className='hero__inner-rightSlashedPrice'>{FormatCurrency(slashed)}</div>
                         </div>

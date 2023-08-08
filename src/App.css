@@ -226,6 +226,7 @@ small{
   font-size: 2rem;
   line-height: 1.2;
   margin-top: .5rem;
+  color: #333;
 }
 .hero__inner-rightBottom p{
   margin-bottom: 1.5rem;
@@ -337,7 +338,7 @@ small{
 }
 .modal__inner-contentTotal{
   margin-left: 5px;
-  color: black;
+  color: #333;
   font-weight: 700;
 }
 .modal__inner-content{
@@ -359,6 +360,7 @@ small{
   font-size: .9em;
   font-weight: 700;
   align-items: center;
+  color: #333;
 }
 .modal__inner-total span{
   font-size: .9em;
