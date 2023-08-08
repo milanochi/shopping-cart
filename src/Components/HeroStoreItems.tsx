@@ -16,15 +16,15 @@ type StoreItemProps = {
     thumbnails?: string
     slashed: number
     carousel: string []
-
+    stock: number
 }
 
 
-const HeroStoreItems = ({ id, name, price, img, slashed, carousel }: StoreItemProps) => {
+const HeroStoreItems = ({ id, name, price, img, slashed, carousel, stock }: StoreItemProps) => {
     const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity} = useShoppingCart()
     const quantity = getItemQuantity(id)
    const [showCarousel, setShowCarousel] = useState(false)
-  
+
   return (
     <div>{
         showCarousel && <Carousel slide={carousel} setShowCarousel={setShowCarousel}/>
@@ -51,6 +51,7 @@ const HeroStoreItems = ({ id, name, price, img, slashed, carousel }: StoreItemPr
                     </div>
                     <div className='hero__inner-rightBottom'>
                         <p>Collections Men Women About Contact Sneaker Company Fall Limited Edition Sneakers These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer. </p>
+                        <div style={{fontSize: '1em', marginBottom:'.5rem',color: 'hsl(26, 100%, 55%)'}}>Stock remaining:<span style={{fontSize: '1.2em',marginLeft: '.2rem', fontWeight: '700', color: 'black'}}>{stock}</span></div>
                         <div className='hero__inner-rightPrice'>
                             <div className='hero__inner-rightCurrentPrice'>
                                 <h2>{FormatCurrency(price)}</h2><span>50%</span>
@@ -63,11 +64,11 @@ const HeroStoreItems = ({ id, name, price, img, slashed, carousel }: StoreItemPr
                                     <img src={Minus} style={{ display: 'flex', alignItems: 'center'}}alt='minus'/>
                                 </button>
                                 <h3>{quantity}</h3>
-                                <button onClick={() => increaseCartQuantity(id)} style={{cursor: 'pointer', border: 'none', background: 'none', width: '20px'}}>
+                                <button onClick={() => increaseCartQuantity(id, stock)} style={{cursor: 'pointer', border: 'none', background: 'none', width: '20px'}}>
                                     <img src={Plus}  style={{cursor: 'pointer', display: 'flex', alignItems: 'center'}}alt='plus'/>
                                 </button>
                             </div>
-                            <button className='hero__inner-rightCheckOut' onClick={() => increaseCartQuantity(id)}>
+                            <button className='hero__inner-rightCheckOut' onClick={() => increaseCartQuantity(id, stock)}>
                                 <div><img src={WCart} style={{cursor: 'pointer', color:'white', height: '25px', width: '25px'}}alt='cart'/></div>
                                 <h5>Add to Cart</h5>
                             </button>

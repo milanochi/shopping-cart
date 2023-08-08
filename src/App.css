@@ -31,6 +31,7 @@ small{
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid rgba(128, 128, 128, 0.377);
   padding-bottom: 20px;
   padding-top: 25px; 

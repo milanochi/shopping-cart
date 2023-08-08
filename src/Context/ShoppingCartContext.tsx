@@ -9,7 +9,7 @@ export const useShoppingCart = () => {
 
 type ShoppingCartContext = {
   getItemQuantity: (id: number) => number
-  increaseCartQuantity: (id: number) => void
+  increaseCartQuantity: (id: number, stock: number) => void
   decreaseCartQuantity: (id: number) => void
   removeFromCart: (id: number) => void
   cartQuantity: number
@@ -19,7 +19,7 @@ type ShoppingCartContext = {
 
 type CartItems = {
   id: number
-  quantity: number
+  quantity: number 
 }
 
 type ShoppingCartProviderProps = {
@@ -33,15 +33,16 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
   function getItemQuantity(id: number) {
     return cartItems.find(item => item.id === id)?.quantity || 0
   }
-  function increaseCartQuantity(id: number) {
-    setCartItems(currentItems => {
+  function increaseCartQuantity(id: number, stock: number) {
+    setCartItems(currentItems => {  
       if(currentItems.find(item => item.id === id) == null) {
         return [...currentItems, { id, quantity: 1 }]
       } else{
         return currentItems.map(item => {
-          if(item.id === id) {
+          if(item.id === id && item.quantity < stock) {
             return {...item, quantity: item.quantity + 1 }
-          }else{
+          }
+          else{
             return item
           }
         })
@@ -83,7 +84,6 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     sumCartItems,
     cartItems,
     cartQuantity,
-    
   }}>
     {
       children

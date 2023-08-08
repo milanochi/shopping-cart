@@ -8,6 +8,7 @@ type CartItemProps = {
     quantity: number
 }
 
+
 const CartItems = ({ id, quantity }: CartItemProps) => {
     const { removeFromCart, sumCartItems } = useShoppingCart()
     const item = Items.find(elem => elem.id === id)
