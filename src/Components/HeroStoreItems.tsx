@@ -51,7 +51,7 @@ const HeroStoreItems = ({ id, name, price, img, slashed, carousel, stock }: Stor
                     </div>
                     <div className='hero__inner-rightBottom'>
                         <p>Collections Men Women About Contact Sneaker Company Fall Limited Edition Sneakers These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer. </p>
-                        <div style={{fontSize: '1em', marginBottom:'.5rem',color: 'hsl(26, 100%, 55%)'}}>Stock remaining:<span style={{fontSize: '1.2em',marginLeft: '.2rem', fontWeight: '700', color: 'black'}}>{stock}</span></div>
+                        <div style={{fontSize: '1em', marginBottom:'.5rem',color: 'hsl(26, 100%, 55%)'}}>Stock remaining:<span style={{fontSize: '1.2em',marginLeft: '.2rem', fontWeight: '700', color: '#333'}}>{stock}</span></div>
                         <div className='hero__inner-rightPrice'>
                             <div className='hero__inner-rightCurrentPrice'>
                                 <h2>{FormatCurrency(price)}</h2><span>50%</span>
