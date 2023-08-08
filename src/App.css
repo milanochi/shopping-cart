@@ -91,6 +91,7 @@ small{
 }
 .hero{
   width: 100%;
+  overflow-x: hidden;
 }
 .hero__inner{
   width: calc(100% - 30px);
@@ -149,13 +150,13 @@ small{
 .hero-innerBtn1{
   position: absolute;
   top: 40%;
-  left: -6%;
+  left: -5%;
 }
 .hero-innerBtn2{
   position: absolute;
   top: 40%;
   right: 0;
-  right: -6%;
+  right: -5%;
 }
 .hero-innerClose{
   display: block;
