@@ -60,12 +60,16 @@ const HeroStoreItems = ({ id, name, price, img, slashed, carousel, stock }: Stor
                         </div>
                         <div className='hero__inner-rightActions'>
                             <div className='hero__inner-rightModify'>
-                                <button onClick={() => decreaseCartQuantity(id)} style={{cursor: 'pointer',border: 'none',background: 'none', width: '20px'}}>
-                                    <img src={Minus} style={{ display: 'flex', alignItems: 'center'}}alt='minus'/>
+                                <button onClick={() => decreaseCartQuantity(id)} style={{cursor: 'pointer',border: 'none',background: 'none', width: '55px', height: '30px', display: 'flex', justifyContent:'center', alignItems: 'center'}}>
+                                    <div>
+                                        <img src={Minus} style={{ display: 'flex', alignItems: 'center'}}alt='minus'/>
+                                    </div>
                                 </button>
                                 <h3>{quantity}</h3>
-                                <button onClick={() => increaseCartQuantity(id, stock)} style={{cursor: 'pointer', border: 'none', background: 'none', width: '20px'}}>
-                                    <img src={Plus}  style={{cursor: 'pointer', display: 'flex', alignItems: 'center'}}alt='plus'/>
+                                <button onClick={() => increaseCartQuantity(id, stock)} style={{cursor: 'pointer', border: 'none', background: 'none', width: '55px', height: '30px', display: 'flex', justifyContent:'center', alignItems: 'center'}}>
+                                    <div>
+                                        <img src={Plus}  style={{cursor: 'pointer', display: 'flex', alignItems: 'center'}}alt='plus'/>
+                                    </div>
                                 </button>
                             </div>
                             <button className='hero__inner-rightCheckOut' onClick={() => increaseCartQuantity(id, stock)}>

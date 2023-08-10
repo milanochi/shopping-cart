@@ -22,7 +22,10 @@ const NavBar = () => {
                 <div className='navbar__inner-right'>
                     <div className='navbar__inner-cart' onClick={() => setShowCart(!showCart)}>
                         <img src={Cart}  style={{cursor: 'pointer'}}alt='cart'/>
-                        <div className='navbar__inner-cartNumber'>{cartQuantity}</div>
+                        <div className={`${cartQuantity < 1 && 'hide'}`}>
+                            <div className={`navbar__inner-cartNumber`}>{cartQuantity}</div>
+                        </div>
+                        
                     </div>
                     <div className='navbar__inner-right2' onClick={() => setShowCart(!showCart)}></div>
                 </div>
