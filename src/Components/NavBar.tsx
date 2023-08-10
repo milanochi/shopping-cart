@@ -11,13 +11,15 @@ const NavBar = () => {
     <nav className='navbar'>
             <div className='navbar__inner'>
                 <div className='navbar__inner-left'>
-                    <div><img src={Logo} className='logo' alt='logo'/></div>
-                    <ul className='navbar__inner-left2'>
-                        <li>Collections</li>
-                        <li>Men</li>
-                        <li>Women</li>
-                        <li>About</li>
-                    </ul>
+                    <div style={{display: 'flex', alignItems:'center', height:'100%'}}><img src={Logo} className='logo' alt='logo'/></div>
+                    <div style={{display: 'flex', alignItems: 'center',height:'100%'}}>
+                        <ul className='navbar__inner-left2'>
+                            <li>Collections</li>
+                            <li>Men</li>
+                            <li>Women</li>
+                            <li>About</li>
+                        </ul>
+                    </div>
                 </div>
                 <div className='navbar__inner-right'>
                     <div className='navbar__inner-cart' onClick={() => setShowCart(!showCart)}>

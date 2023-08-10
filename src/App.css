@@ -52,6 +52,7 @@ small{
   color: grey;
   width: 300px;
   text-decoration: none;
+  height: 100%;
 }
 .navbar__inner-right{
   display: flex;
@@ -382,7 +383,7 @@ small{
     height: 18px;
   }
   .navbar__inner{
-    padding-bottom: 18px;
+    padding: 18px 0;
   }
   .navbar__inner-cart{
     margin-right: 1rem;
