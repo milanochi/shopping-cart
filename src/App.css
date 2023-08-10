@@ -33,8 +33,7 @@ small{
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(128, 128, 128, 0.377);
-  padding-bottom: 20px;
-  padding-top: 25px; 
+  padding: 25px 0;
 }
 .navbar__inner-left{
   display: flex;
@@ -59,6 +58,7 @@ small{
   width: 100px;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 .navbar__inner-cart{
   position: relative;
@@ -386,6 +386,10 @@ small{
   }
   .navbar__inner-cart{
     margin-right: 1rem;
+  }
+  .navbar__inner-right2{
+    width: 35px;
+    height: 35px;
   }
   .hero__inner{
     flex-direction: column;
