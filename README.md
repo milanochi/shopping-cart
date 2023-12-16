@@ -1,5 +1,9 @@
-# React + TypeScript + Vite
+#    Shopping App
+A shopping app where users can see products available, add them to cart, see the total cost of each product selected, the total of all selected items on their cart.
+Note: Users wont be able to add to cart once they have exceeded the number of that particular item in inventory.
+An API endpoint was used to test checkouts.
 
+# React + TypeScript + Vite
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
